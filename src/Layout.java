@@ -7,6 +7,8 @@ public class Layout {
 
     Scanner scanner = new Scanner(System.in);
 
+    private static final int MAX_ATTEMPTS = 4 ;
+
     int i = 0;
 
     String layout(){
@@ -22,7 +24,7 @@ public class Layout {
 
 
         if (u == null){
-            while (i < 4){
+            while (i < MAX_ATTEMPTS){
                 System.out.println("Invalid login, please try again");
                 ++i;
                 return layout();
@@ -34,3 +36,4 @@ public class Layout {
         return "Too many failed login attempts, you are now locked out.";
     }
 }
+
