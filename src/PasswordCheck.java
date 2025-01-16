@@ -4,7 +4,6 @@ public class PasswordCheck {
     User passwordCheck(String userName , String password){
         for (User u : fileReader.users) {
             if (u.getUserName().equals(userName) && u.getPassword().equals(password)){
-
                 return u;
             }
         }

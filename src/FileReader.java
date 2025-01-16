@@ -3,7 +3,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 public class FileReader {
-    public User user = new User();
+//    public User user = new User();
     ArrayList<User> users  = new ArrayList<>();
 
     FileReader(){
@@ -21,8 +21,8 @@ public class FileReader {
         }
     }
 
-    public void userPush(String userName, String password, String name) {
-        new User(userName , password , name);
-    }
+//    public void userPush(String userName, String password, String name) {
+//        new User(userName , password , name);
+//    }
 }
 
