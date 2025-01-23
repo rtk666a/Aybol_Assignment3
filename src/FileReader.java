@@ -17,7 +17,7 @@ public class FileReader {
                 users.add(new User(fileUserInfo[0],fileUserInfo[1],fileUserInfo[2]));
             }
         }catch (Exception e){
-            System.out.println(e);
+            System.out.println(e.toString());
         }
     }
 
