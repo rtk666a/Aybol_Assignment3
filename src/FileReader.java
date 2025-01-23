@@ -8,7 +8,7 @@ public class FileReader {
 
     FileReader(){
         try{
-            File file = new File("D:\\Assiggments\\Aybol_Assingment3\\src\\DB.txt");
+            File file = new File("D:\\Assiggments\\Aybol_Assignment3\\src\\DB.txt");
             BufferedReader inSteam = new BufferedReader(new java.io.FileReader(file));
             String fileString;
 

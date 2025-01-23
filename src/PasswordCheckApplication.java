@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class PasswordCheckApplication {
     public static void main(String[] args) {
-            Layout layout = new Layout();
+            LoginSystem layout = new LoginSystem();
             System.out.println(layout.layout());
         }
 }
