@@ -1,9 +1,8 @@
 import java.util.Scanner;
 
 public class LoginSystem {
-    PasswordCheck check = new PasswordCheck();// I lave this hera because easier access for new method
+    CheckPassword check = new CheckPassword();// I lave this hera because easier access for new method
     private static final int MAX_ATTEMPTS = 4 ;
-
 
 
     String layout() {

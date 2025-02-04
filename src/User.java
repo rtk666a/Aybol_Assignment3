@@ -1,5 +1,5 @@
 public class User {
-    private String userName;
+    private String username;
     private String password;
     private String name;
 
@@ -8,17 +8,17 @@ public class User {
     }
 
     public User(String userName, String password, String name) {
-        this.userName = userName;
+        this.username = userName;
         this.password = password;
         this.name = name;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -40,7 +40,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "userName='" + userName + '\'' +
+                "userName='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
                 '}';
