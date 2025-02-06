@@ -7,6 +7,7 @@ public class FIleService {
         fileReader();
     }
     private void fileReader() {
+        //TODO //User[] users = new User[4]; // if constructor not looking good we can remove it and use this
         try {
             File file = new File("./src/DB.txt");
             BufferedReader bufferedReader = new BufferedReader(new java.io.FileReader(file));
