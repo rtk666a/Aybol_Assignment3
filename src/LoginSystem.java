@@ -1,11 +1,22 @@
+import java.io.BufferedReader;
+import java.io.File;
 import java.util.Scanner;
 
 public class LoginSystem {
-    CheckPassword check = new CheckPassword();// I lave this hera because easier access for new method
-    private static final int MAX_ATTEMPTS = 4 ;
+    private static final int MAX_ATTEMPTS = 4;
+
+    private User checkPassword(String userName, String password) {
+        FIleService userData = new FIleService();
+        for (User u : userData.users) {
+            if (u.getUsername().equalsIgnoreCase(userName) && u.getPassword().equals(password)) {
+                return u;
+            }
+        }
+        return null;
+    }
 
 
-    String layout() {
+    public String layout() {
 
         String userName;
         String password;
@@ -19,14 +30,14 @@ public class LoginSystem {
             System.out.println("Enter your password:");
             password = scanner.next();
 
-            User u = check.passwordCheck(userName, password);
+            User u = checkPassword(userName, password);
 
 
             if (u == null) {
 
                 System.out.println("Invalid login, please try again");
                 i++;
-            }else return "Welcome : " + u.getName();
+            } else return "Welcome : " + u.getName();
 
         }
 
