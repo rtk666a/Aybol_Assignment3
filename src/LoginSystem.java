@@ -9,7 +9,7 @@ public class LoginSystem {
 
     private User checkPassword(String userName, String password) {
         FIleService userData = new FIleService();
-        for (User u : userData.users) {//TODO//also here we can call the method form FileService class  FileService.fileReader.users
+        for (User u : userData.users) {//TODO//also here we can call the method form FileService class  FileService.userData.users
             if (u.getUsername().equalsIgnoreCase(userName) && u.getPassword().equals(password)) {
                 return u;
             }
