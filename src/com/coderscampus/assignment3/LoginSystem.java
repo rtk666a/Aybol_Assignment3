@@ -1,15 +1,13 @@
-import java.io.BufferedReader;
-import java.io.File;
+package com.coderscampus.assignment3;
+
 import java.util.Scanner;
 
 public class LoginSystem {
     private static final int MAX_ATTEMPTS = 4;
 
-
-
     private User checkPassword(String userName, String password) {
         FIleService userData = new FIleService();
-        for (User u : userData.users) {//TODO//also here we can call the method form FileService class  FileService.userData.users
+        for (User u : userData.loadData()) {
             if (u.getUsername().equalsIgnoreCase(userName) && u.getPassword().equals(password)) {
                 return u;
             }
@@ -18,7 +16,7 @@ public class LoginSystem {
     }
 
 
-    public String layout() {
+    public String showLayout() {
 
         String userName;
         String password;

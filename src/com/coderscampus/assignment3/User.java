@@ -1,3 +1,5 @@
+package com.coderscampus.assignment3;
+
 public class User {
     private String username;
     private String password;
@@ -39,7 +41,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "com.coderscampus.assignment3.User{" +
                 "userName='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +

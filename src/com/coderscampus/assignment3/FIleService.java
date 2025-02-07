@@ -1,13 +1,12 @@
+package com.coderscampus.assignment3;
+
 import java.io.BufferedReader;
 import java.io.File;
 
 public class FIleService {
-    User[] users = new User[4];
-    FIleService(){
-        fileReader();
-    }
-    private void fileReader() {
-        //TODO //User[] users = new User[4]; // if constructor not looking good we can remove it and use this
+
+    public User[] loadData() {
+        User[] users = new User[4]; // if constructor not looking good we can remove it and use this
         try {
             File file = new File("./src/DB.txt");
             BufferedReader bufferedReader = new BufferedReader(new java.io.FileReader(file));
@@ -21,5 +20,6 @@ public class FIleService {
         } catch (Exception e) {
             System.out.println(e.toString());
         }
+        return users;
     }
 }

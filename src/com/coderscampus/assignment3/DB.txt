@@ -1,0 +1,4 @@
+test@email.com,passwordTest!1,Test com.coderscampus.assignment3.User
+another@user.com,asdfasdf,Another com.coderscampus.assignment3.User
+john.doe@mydomain.net,Hdk398jf!,John Doe
+jane.doe@myotherdomain.com,sunrise-sunset,Jane Doe
