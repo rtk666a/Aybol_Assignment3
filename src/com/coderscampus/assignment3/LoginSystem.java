@@ -3,7 +3,7 @@ package com.coderscampus.assignment3;
 import java.util.Scanner;
 
 public class LoginSystem {
-    private static final int MAX_ATTEMPTS = 4;
+    private static final int MAX_ATTEMPTS = 5;
 
     private User checkPassword(String userName, String password) {
         FIleService userData = new FIleService();
