@@ -13,6 +13,14 @@ public class LoginService {
         }
     }
 
+    //todo
+    public void lodData(){
+        int i = 0;
+        for (String line : fIleService.loadData()) {
+            String[] userData = line.split(",");
+            users[i++] = new User(userData[0],userData[1],userData[2]);
+        }
+    }
 
     public User checkPassword(String userName, String password) {
         for (User user : users) {

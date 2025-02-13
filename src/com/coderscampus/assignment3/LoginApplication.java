@@ -11,6 +11,8 @@ public class LoginApplication {
     public static void main(String[] args) {
 
         LoginService loginService = new LoginService();
+        //todo
+//        loginService.lodData(); //add if constructor is bad :)
         Scanner scanner = new Scanner(System.in);
         int i = 0;
         User user = null;
