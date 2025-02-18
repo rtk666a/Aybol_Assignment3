@@ -17,9 +17,6 @@ public class FIleService {
                 data[i++] = line;
             }
 
-            for (String datum : data) {
-                System.out.println(datum);
-            }
             return data;
 
 

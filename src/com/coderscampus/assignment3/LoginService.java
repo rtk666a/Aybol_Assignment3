@@ -17,7 +17,6 @@ public class LoginService {
     public void loadUsers(){
         int i = 0;
         for (String line : fIleService.loadData()) {
-            System.out.println(line + " ++"+i );
             String[] userData = line.split(",");
             users[i++] = new User(userData[0],userData[1],userData[2]);
         }
