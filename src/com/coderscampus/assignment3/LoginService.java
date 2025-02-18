@@ -14,25 +14,23 @@ public class LoginService {
 //    }
 
 
-    public void lodData(){
+    public void loadUsers(){
         int i = 0;
         for (String line : fIleService.loadData()) {
+            System.out.println(line + " ++"+i );
             String[] userData = line.split(",");
             users[i++] = new User(userData[0],userData[1],userData[2]);
         }
+
     }
 
     public User checkPassword(String userName, String password) {
-        lodData();
+        loadUsers();
         for (User user : users) {
             if (user.getUsername().equalsIgnoreCase(userName) && user.getPassword().equals(password)) {
                 return user;
-//                return "Welcome : " + user.getName();
             }
-            else {
-                return null;
-//                return "Invalid login, please try again";
-            }
+
         }
         return null;
     }

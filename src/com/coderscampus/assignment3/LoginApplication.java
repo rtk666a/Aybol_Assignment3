@@ -30,7 +30,7 @@ public class LoginApplication {
             } else System.out.println("Invalid login, please try again");
             i++;
 
-            if (i == MAX_ATTEMPTS - 1) {
+            if (i == MAX_ATTEMPTS ) {
                 System.out.println("Too many failed login attempts, you are now locked out.");
             }
         }

@@ -16,7 +16,12 @@ public class FIleService {
             while ((line = bufferedReader.readLine()) != null) {
                 data[i++] = line;
             }
+
+            for (String datum : data) {
+                System.out.println(datum);
+            }
             return data;
+
 
         } catch (Exception e) {
             System.out.println(e.toString());
